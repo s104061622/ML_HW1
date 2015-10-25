@@ -25,7 +25,7 @@ for M = 0:9
     L = lambda.*eye(M+1);
     L(1,1) = 0;
     w(1:M+1,M+1) = (x' * x + L)\x' * v;
-    norm_w = norm(w)
+    norm_w = norm(w);
 
     % Plot the linear fit
     hold on;
